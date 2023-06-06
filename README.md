@@ -1,13 +1,17 @@
 # DVDRENTAL-SQL-ANALYSIS
 
 ## INTRODUCTION
-The database DvdRental has 15 tables. Below are the different tables and a brief description of them.
+The DVD rental database represents the business processes of a DVD rental store. The model ofdatabase was carefully studied for indept understanding and familairization before querying. 
 
-actor — contains actors data including first name and last name.
-film — contains films data such as title, release year, length, rating, etc.
-film_actor — contains the relationships between films and actors.
-category — contains film’s categories data.
-film_category — containing the relationships between films and categories.
+![](DVDRENTALIMAGE.png)
+
+## EXPLAINATION OF TERMS
+Below are the different tables and a brief description of them.
+**Actor** — contains actors data including first name and last name.
+**Film** — contains films data such as title, release year, length, rating, etc.
+**Film_actor** — contains the relationships between films and actors.
+**Category** — contains film’s categories data.
+**Film_category** — containing the relationships between films and categories.
 store — contains the store data including manager staff and address.
 inventory — stores inventory data.
 rental — stores rental data.
