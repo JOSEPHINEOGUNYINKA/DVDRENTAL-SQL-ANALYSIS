@@ -1,45 +1,48 @@
 # DVDRENTAL-SQL-ANALYSIS
 
 ## INTRODUCTION
-The DVD rental database represents the business processes of a DVD rental store. The model ofdatabase was carefully studied for indept understanding and familairization before querying. 
+The DVD rental database represents the business processes of a DVD rental store consisting of 15 tables. The model of database was carefully studied for indept understanding and familairization before querying. 
 
 ![](DVDRENTALIMAGE.png)
 
-## EXPLAINATION OF TERMS
-Below are the different tables and a brief description of them.
-**Actor** — contains actors data including first name and last name.
-**Film** — contains films data such as title, release year, length, rating, etc.
-**Film_actor** — contains the relationships between films and actors.
-**Category** — contains film’s categories data.
-**Film_category** — containing the relationships between films and categories.
-store — contains the store data including manager staff and address.
-inventory — stores inventory data.
-rental — stores rental data.
-payment — stores customer’s payments.
-staff — stores staff data.
-customer — stores customer’s data.
-address — stores address data for staff and customers
-city — stores the city names.
-country — stores the country names.
-Note: I analyzed this database using PostgreSQL. You can get details to install PostgreSQL here and download the DVD rental database here.
+## LIST OF TABLES
+Below are the list of tables present in the database
+- **Actor**
+- **Film** 
+- **Film_actor** 
+- **Category**
+- **Film_category** 
+- **Store**
+- **Inventory** 
+- **Rental**
+- **Payment** 
+- **Staff** 
+- **Customer** 
+- **Address**
+- **City** 
+- **Country**
 
-Objective & Goals
-In this project, I’ll aim to answer the following questions:
 
-What are the top and least rented (in-demand) genres and what are their total sales?
-Can we know how many distinct users have rented each genre?
-What is the average rental rate for each genre? (from the highest to the lowest)
-How many rented films were returned late, early, and on time?
-In which countries does Rent A Film have a presence and what is the customer base in each country? What are the total sales in each country? (from most to least)
-Who are the top 5 customers per total sales and can we get their details just in case Rent A Film wants to reward them?
-Before getting started with analyses, I first tried understanding the ERM (Entity Relationship Model) of this database also known as Schema. Here is the Schema below:
 
-Re5gkP7yWnJhl7p84eVLeVRxixkh9Po284s0
-DVD RENTAL SCHEMA
-You can view my code on my GitHub profile here.
-
-Analysis
-To answer the first question “What are the top and least rented (in-demand) genres and what are what are their total sales?”, I first identified with tables I would need to Join, which are:
-
-Category >film_Category >film>inventory>rental >customer >payment
-Below is the query I used to extract to answer the question:
+## The following questions were answered in this project
+1. How many payment transactions are graeter than $5.00?
+2. ![](1.png)
+3. How many actors have a first name that start with letter 'P'?
+4. ![](2.png)
+5. How many unique districts are the customers from?
+6. ![](3.png)
+7. List the name of the district in ascending order.
+8. ![](4.png)
+9. How many films have the word Truman somewhere in ther title?
+10.![](5.png)
+11.  Create a table to organkse our potential leads; we will have the following information, Customers first name, last name, Email, Sign up date,and number of minutes spent on DVD rental website.
+12. ![](6.png)
+13. Which customer has the highest customer ID number,whose name start with 'E' and has an addres ID LOWER THAN 500?
+14. ![](7.png)
+15. Return the Cuystomer IDs of customers that have spent at least $110 with the staff member who has an ID of 2.
+16. ![](8.png)
+17. How many films with Rating of 'R' and a replacement cost between $5 and $15?
+10. ![](9.png)
+11. Maximun payment transaction by customers. 
+    ![](10.png)
+![](SQLSHEET.png)
